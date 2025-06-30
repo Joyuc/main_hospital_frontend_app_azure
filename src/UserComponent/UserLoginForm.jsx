@@ -17,7 +17,7 @@ const UserLoginForm = () => {
   };
 
   const loginAction = (e) => {
-    fetch("https://hospitalapi.cloudwitches.online/api/user/login", {
+    fetch("https://hospitalapi.jay4tech.online/api/user/login", {
       method: "POST",
       headers: {
         Accept: "application/json",

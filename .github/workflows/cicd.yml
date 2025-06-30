@@ -17,7 +17,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: digitalwitchdemo/main_hospital_frontend_app
+        repository: joyuc/main_hospital_frontend_app_azure
         ref: main
 
 

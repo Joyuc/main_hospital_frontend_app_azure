@@ -17,13 +17,13 @@ const ViewAllDoctor = () => {
   }, []);
 
   const retrieveAllDoctor = async () => {
-    const response = await axios.get("https://hospitalapi.cloudwitches.online/api/doctor/all");
+    const response = await axios.get("https://hospitalapi.jay4tech.online/api/doctor/all");
     console.log(response.data);
     return response.data;
   };
 
   const deleteDoctor = (doctorId) => {
-    fetch("https://hospitalapi.cloudwitches.online/api/user/delete/id?userId=" + doctorId, {
+    fetch("https://hospitalapi.jay4tech.online/api/user/delete/id?userId=" + doctorId, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -78,7 +78,7 @@ const ViewAllDoctor = () => {
                       <td>
                         <img
                           src={
-                            "https://hospitalapi.cloudwitches.online/api/user/" +
+                            "https://hospitalapi.jay4tech.online/api/user/" +
                             doctor.doctorImage
                           }
                           class="img-fluid"

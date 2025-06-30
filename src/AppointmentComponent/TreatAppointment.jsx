@@ -16,7 +16,7 @@ const TreatAppointment = () => {
   const [prescription, setPrescription] = useState("");
   
   const retrieveAppointment = async () => {
-    const response = await axios.get("https://hospitalapi.cloudwitches.online/api/appointment/id?appointmentId="+appointmentId);
+    const response = await axios.get("https://hospitalapi.jay4tech.online/api/appointment/id?appointmentId="+appointmentId);
     return response.data;
   };
 
@@ -40,7 +40,7 @@ const TreatAppointment = () => {
     formData.append("status", status);
 
     axios
-      .post("https://hospitalapi.cloudwitches.online/api/appointment/doctor/update", formData)
+      .post("https://hospitalapi.jay4tech.online/api/appointment/doctor/update", formData)
       .then((result) => {
         result.json().then((res) => {
           console.log(res);
